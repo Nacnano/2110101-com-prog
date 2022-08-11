@@ -1,12 +1,10 @@
 def sqrt_n_times(x, n):
-    return x**(1/n)
+    return x**(1/2**n)
 
 
 def cube_root(y):
-    # คืนค่าประมาณของรากที่สามของ y โดยใชวิธี ้ ที่เสมือนการกดปุ่มด้วยสูตร
-    #
-    # ข้อแนะน า: เรียกใชฟ้ ังกช์ ัน sqrt_n_times
-    return sqrt_n_times(y,) * sqrt_n_times
+    return sqrt_n_times(y, 2)*sqrt_n_times(y, 4)*sqrt_n_times(y, 6)*sqrt_n_times(y, 8)*sqrt_n_times(y, 10)*sqrt_n_times(y, 12)*sqrt_n_times(y, 14)*sqrt_n_times(y, 16)
+    # return sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(y, 2), 2), 2), 2), 2), 2), 2)
 
 
 def main():
@@ -14,4 +12,4 @@ def main():
     print(cube_root(q))
 
 
-exec(input())  # DON'T remove this line
+exec(input())

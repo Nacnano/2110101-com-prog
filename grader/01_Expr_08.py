@@ -1,11 +1,14 @@
 def sqrt_n_times(x, n):
-    return x**(1/2**n)
+    for i in range(n):
+        x = x**(1/2)
+    return x
 
 
 def cube_root(y):
-    return sqrt_n_times(y, 2)*sqrt_n_times(y, 4)*sqrt_n_times(y, 6)*sqrt_n_times(y, 8)*sqrt_n_times(y, 10)*sqrt_n_times(y, 12)*sqrt_n_times(y, 14)*sqrt_n_times(y, 16)
-    # return sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(sqrt_n_times(y, 2), 2), 2), 2), 2), 2), 2)
-    # what is 'x' for the regular calculator IDK
+    y = sqrt_n_times(y, 2)
+    for i in range(1, 6):
+        y = y * sqrt_n_times(y, 2**i)
+    return y
 
 
 def main():

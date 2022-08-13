@@ -1,6 +1,10 @@
 a = float(input())
 l = 0
-u = 600
+u = 1
+x = a
+while x//10:
+    x /= 10
+    u += 1
 cnt = 90
 while cnt:
     cnt -= 1

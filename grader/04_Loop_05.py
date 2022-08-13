@@ -1,9 +1,5 @@
 # Forget complex string matching algorithms
-# All I know now is BRUTE FORCE!!!
-def is_char(a):
-    return (a >= 'a' and a <= 'z') or (a >= 'A' or a <= 'Z')
-
-
+# All I know now is BRUTE FORCE!!! .isalpha() check whether that string is purely consisted of alphabets
 a, b = input(), input()
 ans = 0
 for i in range(len(b)-len(a)+1):

@@ -38,7 +38,7 @@ else:
         p = round(p, 12)
         print("pi =", p)
     else:
-        if c == 'p':
+        if c == 'P':
             p = (7+(6+5**0.5)**0.5)**0.5
             p = round(p, 6)
             print("pi =", p)

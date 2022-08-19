@@ -3,13 +3,12 @@
 A  repository for storing codes and learning materials from 2110101 Computer Programming Class of 2022 Bachelor of Engineering Chulalongkorn University
 
 
-
-<h2 align="center">
-IMPORTANT
+<h2 align="center" style="font-weight:bold">
+*IMPORTANT*
 </h2>
 
 <h3 align="center">
-Copying doesn't contribute to your Learning at all! So, please don't make me lecture you about Copying, Cheating, and Plagiarism in general!
+Copying doesn't contribute to your <strong> Learning </strong> at all! So, please don't make me lecture you about Copying, Cheating, and Plagiarism in general!
 </h3>
 
 

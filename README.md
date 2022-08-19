@@ -16,5 +16,5 @@ A  repository for storing codes and learning materials from 2110101 Computer Pro
  
  ### Any contribution to this repository will be pleased.
  
- # Good luck in your computer and informatics career in the future!
+ ## Good luck in your engineering career with a bright future!
  

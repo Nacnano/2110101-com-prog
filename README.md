@@ -7,8 +7,8 @@ A  repository for storing codes and learning materials from 2110101 Computer Pro
 ### Insert an angry face image here
 
 ## Sections
- 1. [Grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solution** (both real and alternate) to [this class' grader.](https://2110101.nattee.net)
- 2. [Test-Pygame] (https://github.com/Nacnano/2110101-com-prog/tree/main/Test_Pygame) - Test for running pygame
+ 1. [grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solution** (both real and alternate) to [this class' grader.](https://2110101.nattee.net)
+ 2. [test_pygame](https://github.com/Nacnano/2110101-com-prog/tree/main/Test_Pygame) - Test for running pygame
 
 ### Author(s)
  - [Nacnano](https://github.com/Nacnano) : Chotpisit Adunsehawat (CP49)

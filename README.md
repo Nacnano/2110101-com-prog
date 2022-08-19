@@ -11,7 +11,7 @@ A  repository for storing codes and learning materials from 2110101 Computer Pro
  2. Will be add in the near future...
 
 ### Author(s)
- - [Nacnano](https://github.com/Nacnano)
+ - [Nacnano](https://github.com/Nacnano) : Chotpisit Adunsehawat (CP49)
  
  
  ### Any contribution to this repository will be pleased.

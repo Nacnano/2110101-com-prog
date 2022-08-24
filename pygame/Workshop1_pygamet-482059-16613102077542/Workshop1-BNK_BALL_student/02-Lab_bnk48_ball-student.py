@@ -82,7 +82,7 @@ while running:
         ball3_rect = ball3_rect.move(ball3_speed)
 
         # TODO 11 : วาด text คำว่า "Heavy Collision" [size : 150 , center :(width/2 , height/3), สีขาว]
-        font_name = pg.font.match_font('arial')  # กำหนดชื่อ Font
+        font_name = pg.font.match_font('arial')  # กำหนดชื่อ Fontball1_rect
         font = pg.font.Font(font_name, 150)  # กำหนดขนาด font
         text_surface = font.render("Heavy Collision", True, white)
         text_rect = text_surface.get_rect()

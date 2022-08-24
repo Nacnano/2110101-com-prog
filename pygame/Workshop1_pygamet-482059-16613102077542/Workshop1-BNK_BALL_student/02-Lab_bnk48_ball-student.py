@@ -57,6 +57,10 @@ ball3_img = pg.transform.scale(ball3_img, (120, 120))
 ball3_rect = ball3_img.get_rect(center=(800, 400))
 
 
+def isCollide(ball1, ball2):
+    return (ball1[0]-ball2[0])**2 + (ball1[1]-ball2[1])**2 <= (ball1[2]+ball2[2])**2
+
+
 while running:
     # TODO 8 : set ให้ตัวเกมส์แสดงผลด้วยความเร็วที่เหมาะสม [clock.tick(...)]
     clock.tick(FPS)
@@ -92,7 +96,7 @@ while running:
         screen.blit(text_surface, text_rect)
 
         # TODO 13 : เขียนเงื่อนไขไม่ให้ตกกรอบทุกด้านให้กับ member ทั้ง 3 คน
-        # ball1_data = [(ball1_rect.left+ball1_rect.right)/2, (ball1_rect.top+ball1_rect.bottom)/2, (ball1_rect.top-ball1_rect.bottom)/2]
+        ball1_data = [(ball1_rect.left+ball1_rect.right)/2, (ball1_rect.top+ball1_rect.bottom)/2, (ball1_rect.top-ball1_rect.bottom)/2]
 
         if ball1_rect.left < 0 or ball1_rect.right > width:
             ball1_speed[0] = -ball1_speed[0]
@@ -110,6 +114,19 @@ while running:
             ball3_speed[1] = -ball3_speed[1]
 
         # Special point ทำให้ลูกบอลชนกันแล้วเด้งในทิศตรงกันข้าม
+        ball1_data = [(ball1_rect.left+ball1_rect.right)/2, (ball1_rect.top+ball1_rect.bottom)/2, (ball1_rect.top-ball1_rect.bottom)/2]
+        ball2_data = [(ball2_rect.left+ball2_rect.right)/2, (ball2_rect.top+ball2_rect.bottom)/2, (ball2_rect.top-ball2_rect.bottom)/2]
+        ball3_data = [(ball3_rect.left+ball3_rect.right)/2, (ball3_rect.top+ball3_rect.bottom)/2, (ball3_rect.top-ball3_rect.bottom)/2]
+
+        if isCollide(ball1_data, ball2_data):
+            ball1_speed[0], ball2_speed[0] = ball2_speed[0], ball1_speed[0]
+            ball1_speed[1], ball2_speed[1] = ball2_speed[1], ball1_speed[1]
+        if isCollide(ball2_data, ball3_data):
+            ball2_speed[0], ball3_speed[0] = ball3_speed[0], ball2_speed[0]
+            ball2_speed[1], ball3_speed[1] = ball3_speed[1], ball2_speed[1]
+        if isCollide(ball1_data, ball3_data):
+            ball1_speed[0], ball3_speed[0] = ball3_speed[0], ball1_speed[0]
+            ball1_speed[1], ball3_speed[1] = ball3_speed[1], ball1_speed[1]
 
         ################################################
 

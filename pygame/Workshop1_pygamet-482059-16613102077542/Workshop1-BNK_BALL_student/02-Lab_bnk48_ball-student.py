@@ -56,6 +56,8 @@ ball3_img = pg.image.load("source/BNK48/Cherprang_cc.png").convert_alpha()
 ball3_img = pg.transform.scale(ball3_img, (120, 120))
 ball3_rect = ball3_img.get_rect(center=(800, 400))
 
+# Check whether the balls collide with each others
+
 
 def isCollide(ball1, ball2):
     return (ball1[0]-ball2[0])**2 + (ball1[1]-ball2[1])**2 <= (ball1[2]+ball2[2])**2
@@ -114,10 +116,12 @@ while running:
             ball3_speed[1] = -ball3_speed[1]
 
         # Special point ทำให้ลูกบอลชนกันแล้วเด้งในทิศตรงกันข้าม
+        # Note: ball_data = [x_center, y_center, radius]
         ball1_data = [(ball1_rect.left+ball1_rect.right)/2, (ball1_rect.top+ball1_rect.bottom)/2, (ball1_rect.top-ball1_rect.bottom)/2]
         ball2_data = [(ball2_rect.left+ball2_rect.right)/2, (ball2_rect.top+ball2_rect.bottom)/2, (ball2_rect.top-ball2_rect.bottom)/2]
         ball3_data = [(ball3_rect.left+ball3_rect.right)/2, (ball3_rect.top+ball3_rect.bottom)/2, (ball3_rect.top-ball3_rect.bottom)/2]
 
+        # Swap speed
         if isCollide(ball1_data, ball2_data):
             ball1_speed[0], ball2_speed[0] = ball2_speed[0], ball1_speed[0]
             ball1_speed[1], ball2_speed[1] = ball2_speed[1], ball1_speed[1]

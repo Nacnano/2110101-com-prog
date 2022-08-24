@@ -17,8 +17,8 @@ Copying doesn't contribute to your <strong> Learning </strong> at all! So, pleas
 </p>
 
 ## Sections
- 1. [grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solution** (both real and alternate) to [this class' grader.](https://2110101.nattee.net)
- 2. [test_pygame](https://github.com/Nacnano/2110101-com-prog/tree/main/Test_Pygame) - Test for running pygame
+ 1. [Grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solution** (both real and alternate) to [this class' grader.](https://2110101.nattee.net)
+ 2. [Pygame](https://github.com/Nacnano/2110101-com-prog/tree/main/pygame) - **Codes** for pygame Workshops 
 
 ### Author(s)
  - [Nacnano](https://github.com/Nacnano) : Chotpisit Adunsehawat (CP 49)

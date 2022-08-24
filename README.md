@@ -24,7 +24,7 @@ Copying doesn't contribute to your <strong> Learning </strong> at all! So, pleas
  - [Nacnano](https://github.com/Nacnano) : Chotpisit Adunsehawat (CP 49)
  
  
- ### Any contribution to this repository will be pleased.
+ ### Any contribution to this repository will be appreciated.
  
  ## Good luck in your engineering career with a bright future!
  

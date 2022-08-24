@@ -3,7 +3,7 @@ import pygame as pg  # import library
 pg.init()  # initialize pygame modules
 
 # initialize screen resolution and variable
-width= 320
+width = 320
 height = 240
 FPS = 60
 
@@ -11,7 +11,7 @@ speed = [2, 2]
 black = 0, 0, 0
 
 # นำเอาค่าในตัวแปร size ใช้ในการสร้าง screen resolution
-screen = pg.display.set_mode((width,height))
+screen = pg.display.set_mode((width, height))
 
 # โหลดภาพจากภายนอกเข้ามาใช้
 ball = pg.image.load("source/img/intro_ball.gif")
@@ -58,18 +58,17 @@ while running:
         ###########################################################################
         # TO DO 1 : จงทำให้บอลชิ่งไปมาในกรอบสี่เหลี่ยม (ไม่ตกกรอบ บน-ล่าง) [ top , bottom ]
         # Hint [ทำคล้ายๆกับข้างบน speed[0] หมายถึงแกน x และ speed[1] หมายถึงแกน y]
-
+        if ballrect.top < 0 or ballrect.bottom > height:
+            speed[1] = -speed[1]
 
         ###########################################################################
 
         # ล้างทุกอย่างในจอโดยการให้จอเป็นสีดำ (ลอง comment code ดูสิจะเกิดอะไรขึ้น)
         screen.fill(black)
 
-        #เอาภาพ ball ใส่ใน object ballrect (ลอง comment code ดูสิว่าเกิดอะไรขึ้น)
+        # เอาภาพ ball ใส่ใน object ballrect (ลอง comment code ดูสิว่าเกิดอะไรขึ้น)
         screen.blit(ball, ballrect)
 
         # อัพเดท content ลงใน screen -> ในที่นี้คือการ นำเอา screen และ ballrect ใส่ลงใน window
         # (ลอง comment code ดูสิว่าเกิดอะไรขึ้น)
         pg.display.flip()
-
-

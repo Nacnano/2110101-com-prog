@@ -26,7 +26,7 @@ Please don't make me lecture you about Copying, Cheating, and Plagiarism in gene
 
  1. [Grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solutions** (both real and alternate) to this class' [Grader.](https://2110101.nattee.net)
  2. [Homework](https://github.com/Nacnano/2110101-com-prog/tree/main/homework) - **Homeworks** for this class on  [MyCourseVille.](https://www.mycourseville.com/?q=courseville/course/29665)
- 3. [Pygame](https://github.com/Nacnano/2110101-com-prog/tree/main/pygame) - **Codes** for pygame workshops (Please be awared that file locations might be different from yours)
+ 3. [Workshop](https://github.com/Nacnano/2110101-com-prog/tree/main/workshop) - **Codes** for workshops (Please be awared that file locations might be different from yours)
 
 ### Author(s)
 

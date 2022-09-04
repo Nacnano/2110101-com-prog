@@ -11,11 +11,15 @@ A  repository for storing codes and learning materials from 2110101 Computer Pro
 </h3>
 
 <h3 align="center">
-Copying doesn't contribute to your <strong> Learning </strong> at all!
+Copying doesn't contribute to your <strong> LEARNING </strong> at all!
 </h3>
 
 <h3 align="center">
-Please don't make me lecture you about Copying, Cheating, and Plagiarism in general!
+Please don't make me lecture you about Copying, Cheating, and Plagiarism in general! 
+</h3>
+
+<h3 align="center">
+You are an <strong>ADULT</strong> now, okay?
 </h3>
 
 <p align="center">
@@ -24,14 +28,14 @@ Please don't make me lecture you about Copying, Cheating, and Plagiarism in gene
 
 ## Sections
 
- 1. [Grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solutions** (both real and alternate) to this class' [Grader.](https://2110101.nattee.net)
- 2. [Homework](https://github.com/Nacnano/2110101-com-prog/tree/main/homework) - **Homeworks** for this class on  [MyCourseVille.](https://www.mycourseville.com/?q=courseville/course/29665)
- 3. [Workshop](https://github.com/Nacnano/2110101-com-prog/tree/main/workshop) - **Codes** for workshops (Please be awared that file locations might be different from yours)
+ 1. [Grader](https://github.com/Nacnano/2110101-com-prog/tree/main/grader) - **Solutions** (both real and alternate) to this class' [Grader](https://2110101.nattee.net).
+ 2. [Homework](https://github.com/Nacnano/2110101-com-prog/tree/main/homework) - **Homeworks** for this class on  [MyCourseVille].(https://www.mycourseville.com/?q=courseville/course/29665)
+ 3. [Workshop](https://github.com/Nacnano/2110101-com-prog/tree/main/workshop) - **Codes** for workshops (Please be awared that file locations might be different from yours.)
 
 ### Author(s)
 
 - [Nacnano](https://github.com/Nacnano) : Chotpisit Adunsehawat (CP 49)
 
-### Any contribution to this repository will be appreciated
+### Any contribution to this repository will be appreciated.
 
 ## Good luck in your engineering career with a bright future!

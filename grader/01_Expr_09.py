@@ -32,4 +32,4 @@ def main():
     print(hms2str(hd, md, sd))
 
 
-exec(input())  # DON'T remove this line
+exec(input())

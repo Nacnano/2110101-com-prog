@@ -15,7 +15,7 @@ Copying doesn't contribute to your <strong> LEARNING </strong> at all!
 </h3>
 
 <h3 align="center">
-Please don't make me lecture you about Copying, Cheating, and Plagiarism in general! 
+Please don't make me lecture you about Copying, Cheating, and Plagiarism in general!
 </h3>
 
 <h3 align="center">
@@ -36,6 +36,6 @@ You are an <strong>ADULT</strong> now, okay?
 
 - [Nacnano](https://github.com/Nacnano) : Chotpisit Adunsehawat (CP 49)
 
-### Any contribution to this repository will be appreciated.
+### Any contribution to this repository will be appreciated
 
-## Good luck in your engineering career with a bright future!
+## Good luck in your engineering career with a bright future

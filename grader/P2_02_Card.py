@@ -28,6 +28,6 @@ for i in range(0, len(s)-2, 2):
         diff = value(c1[1])-value(c2[1])
     else:
         diff = value(c1[0])-value(c2[0])
-    if diff>0:
+    if diff > 0:
         print("+", end='')
     print(diff, end='')

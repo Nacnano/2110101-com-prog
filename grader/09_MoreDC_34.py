@@ -43,6 +43,15 @@ def pattern5(N):
 
 def pattern6(N):
     ret = []
+    for i in range(N):
+        ret += [[0]*i]
+    num = 1
+    for i in range(N):
+        num += (N-i-1)*(i % 2)
+        for j in range(N-i):
+            ret[j] += [num]
+            num += (-1) ** i
+        num += (N-i+1)*(i % 2)
     return ret
 
 

@@ -6,13 +6,11 @@ prev = -1
 for num in list:
     if num == prev:
         cnt += 1
-    if num != prev:
+    else:
         prev = num
         cnt = 1
-
     if cnt == k:
         ans -= num*(k-1)
     elif cnt < k:
         ans += num
-
 print(ans)

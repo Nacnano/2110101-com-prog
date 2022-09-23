@@ -1,6 +1,6 @@
 # 2110101 Com Prog
 
-A  repository for storing codes and learning materials from 2110101 Computer Programming Class of 2022 Bachelor of Engineering Chulalongkorn University
+A repository for storing codes and learning materials from 2110101 Computer Programming Class of 2026 Bachelor of Engineering Chulalongkorn University
 
 <h2 align="center" style="font-weight:bold">
 ***IMPORTANT***
@@ -11,7 +11,7 @@ A  repository for storing codes and learning materials from 2110101 Computer Pro
 </h3>
 
 <h3 align="center">
-Copying doesn't contribute to your <strong> LEARNING </strong> at all!
+Copying doesn't contribute to your <strong> Learning </strong> at all!
 </h3>
 
 <h3 align="center">
@@ -19,7 +19,7 @@ Please don't make me lecture you about Copying, Cheating, and Plagiarism in gene
 </h3>
 
 <h3 align="center">
-You are an <strong>ADULT</strong> now, okay?
+You are an <strong>Adult</strong> now, okay?
 </h3>
 
 <p align="center">

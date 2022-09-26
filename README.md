@@ -39,3 +39,6 @@ You are an <strong>Adult</strong> now, okay?
 ### Any contribution to this repository will be appreciated
 
 ## Good luck in your engineering career with a bright future
+
+### Other codes
+- 

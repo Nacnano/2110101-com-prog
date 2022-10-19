@@ -24,16 +24,33 @@ if __name__ == '__main__':
 
     # T cannot be composed by coin_a and coin_b
     # if it cannot be divided by their greatest common divisor
-    if(T % gcd(a, b) != 0):
+    if a == 0 and b == 0:
+        if T != 0:
+            print("IMPOSSIBLE")
+        else:
+            print(f"na: 0, nb: 0")
+    elif a == 0 or b == 0:
+        if a == 0:
+            if T % b == 0:
+                print(f"na: {0}, nb: {int(T/b)}")
+            else:
+                print("IMPOSSIBLE")
+        if b == 0:
+            if T % a == 0:
+                print(f"na: {int(T/a)}, nb: {0}")
+            else:
+                print("IMPOSSIBLE")
+    elif(T % gcd(a, b) != 0):
         print("IMPOSSIBLE")
 
     else:
         na = 0
         yes = False
-        while(not yes):
+        while(T-a*na >= 0):
             if (T - a*na) % b == 0:
                 nb = (T - a*na)/b
                 yes = True
+                break
             na += 1
 
         if(yes):

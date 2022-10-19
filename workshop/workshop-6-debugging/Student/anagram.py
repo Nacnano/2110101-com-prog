@@ -21,7 +21,9 @@ def find_anagram(x):
     # get key of input x
     key = get_key(x.strip())
     # return all possible anagram of x
-    return words[key]
+    if key in words:
+        return words[key]
+    return []
 
 
 if __name__ == '__main__':

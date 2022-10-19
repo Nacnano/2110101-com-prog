@@ -1,3 +1,4 @@
 faculty_image
 assets
 *.csv
+!*.txt

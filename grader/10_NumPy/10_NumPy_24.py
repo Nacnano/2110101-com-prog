@@ -2,9 +2,8 @@ import numpy as np
 
 
 def peak_indexes(x):
-    # x เป็นอาเรย์เก็บจ านวนต่าง ๆ
-    # คืนอาเรย์ที่เก็บต าแหน่งใน x ที่เป็น "ยอด"
-    ???
+    peaks = (x > np.append(x[1:], 0)) & (x > np.append(0, x[:-1]))
+    return np.arange(1, len(x)-1)[peaks[1:-1]]
 
 
 def main():
@@ -13,7 +12,7 @@ def main():
     if len(pos) > 0:
         print(", ".join([str(e) for e in pos]))
     else:
-    print("No peaks")
+        print("No peaks")
 
 
 exec(input().strip())

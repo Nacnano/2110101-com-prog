@@ -1,55 +1,54 @@
-n = int(input())
+n = int(input().strip())
 parties = []
 for i in range(n):
-    parties += [input()]
+    parties += [input().strip()]
 
 partyOf = {}
 memberInParty = {}
-n = int(input())
+n = int(input().strip())
 for i in range(n):
-    name, party = input().split()
+    name, party = input().strip().split()
     partyOf[name] = party
     if party in memberInParty:
         memberInParty[party] += [name]
     else:
         memberInParty[party] = [name]
 
-n = int(input())
+n = int(input().strip())
 results = {}
 individual = {}
 for i in range(n):
-    name, result = input().split()
-    individual[name] = result
+    name, vote = input().strip().split()
+    individual[name] = vote
     party = partyOf[name]
     if party in results:
-        if result in results[party]:
-            results[party][result] += 1
+        if vote in results[party]:
+            results[party][vote] += 1
         else:
-            results[party][result] = 1
+            results[party][vote] = 1
     else:
-        results[party] = {result: 1}
+        results[party] = {vote: 1}
 types = ['Y', 'N', 'X']
 for party in parties:
     print(party)
     result = []
     for type in types:
-        if type not in results[party]:
-            count = 0
-        else:
+        if type in results[party]:
             count = results[party][type]
+        else:
+            count = 0
         result += [(count, type)]
     result.sort()
     if result[-1][0] == result[-2][0]:
         print("Inconclusive")
         continue
-    cobra = []
+    cobras = []
     for member in memberInParty[party]:
         if member not in individual:
             continue
         if individual[member] != result[-1][1]:
-            cobra += [member]
-    cobra.sort()
-    if len(cobra):
-        print(", ".join(cobra))
+            cobras += [member]
+    if len(cobras):
+        print(", ".join(sorted(cobras)))
     else:
-        print("No Cobra")
+        print("No cobra")

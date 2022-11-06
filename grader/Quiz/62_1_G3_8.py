@@ -31,6 +31,10 @@ for i in range(n):
 types = ['Y', 'N', 'X']
 for party in parties:
     print(party)
+    if party not in results:
+        print("Inconclusive")
+        continue
+
     result = []
     for type in types:
         if type in results[party]:

@@ -1,15 +1,3 @@
-class Bid:
-    def __init__(self, value, person, order):
-        self.value = value
-        self.person = person
-        self.order = order
-
-    def __lt__(self, rhs):
-        if self.value != rhs.value:
-            return self.value > rhs.value
-        return self.order < rhs.order
-
-
 dict_bid = {}
 n = int(input())
 

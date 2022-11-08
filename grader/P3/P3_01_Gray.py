@@ -1,15 +1,14 @@
 n = int(input())
 k = int(input())
-nvalid = n < 0 or type(n) == float
-kvalid = k < 1
-if nvalid and kvalid:
+nbad = n < 0 or type(n) == float
+kbad = k < 1
+if nbad and kbad:
     print("Invalid n and k ")
-    exit(0)
-elif nvalid:
+elif nbad:
     print("Invalid n")
-    exit(0)
-elif kvalid:
+elif kbad:
     print("Invalid k")
+if kbad or nbad:
     exit(0)
 
 print("".join((str(i+1) + "-"*(n-len(str(i+1))+1)) for i in range(k-1))+str(k)+"-"*(n-1-len(str(k))+1))

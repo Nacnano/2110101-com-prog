@@ -18,10 +18,13 @@ while True:
         break
     inputs = s.split()
     name, id, do = inputs[:3]
-    if id not in accounts:
-        accounts[id] = inputs[3]
+    if do == "deposit" and id not in accounts:
+        accounts[id] = float(inputs[3])
         names[id] = name
         output(id)
+        continue
+    if id not in accounts:
+        print("Transaction Failed")
         continue
     if names[id] != name:
         print("Transaction Failed")
@@ -34,9 +37,12 @@ while True:
         if amount > accounts[id]:
             print("Transaction Failed")
             continue
-        accounts[id] += amount
+        accounts[id] -= amount
         output(id)
     elif do == "transfer":
+        if inputs[3] not in accounts:
+            print("Transaction Failed")
+            continue
         amount = float(inputs[4])
         if amount > accounts[id]:
             print("Transaction Failed")

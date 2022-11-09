@@ -8,7 +8,8 @@ for i in range(n):
 
 
 def output(id):
-    print(names[id], "("+id+")", str(accounts[id]).rstrip('0').rstrip('.'))
+    amount = str(accounts[id])
+    print(names[id], "("+id+")", amount.rstrip('0').rstrip('.')) if '.' in amount else amount
 
 
 while True:

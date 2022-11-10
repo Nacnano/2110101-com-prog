@@ -2,8 +2,8 @@ pos = input().strip()
 row = ''
 col = ''
 if len(pos) <= 3:
-    row = ???
-    col = ???
+    row =
+    col =
 else:
     row = row
 row = row.strip()

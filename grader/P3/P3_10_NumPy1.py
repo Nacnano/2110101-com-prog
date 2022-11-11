@@ -15,49 +15,5 @@ def number_of_inversions(A):
     value = (A > A.reshape((A.shape[0], 1)))
     return np.sum(value & index)
 
-# FENWICK TREE SOLUTION
-# def count_inversions(a):
-#   res = 0
-#   counts = [0]*(len(a)+1)
-#   rank = { v : i+1 for i, v in enumerate(sorted(a)) }
-#   for x in reversed(a):
-# i = rank[x] - 1
-# while i:
-#   res += counts[i]
-#   i -= i & -i
-# i = rank[x]
-# while i <= len(a):
-#   counts[i] += 1
-#   i += i & -i
-#   return res
-
-
-# MERGE SORT SOLUTION
-# def merge_count_inversion(lst):
-#     if len(lst) <= 1:
-#         return lst, 0
-#     middle = int( len(lst) / 2 )
-#     left, a = merge_count_inversion(lst[:middle])
-#     right, b = merge_count_inversion(lst[middle:])
-#     result, c = merge_count_split_inversion(left, right)
-#     return result, (a + b + c)
-
-# def merge_count_split_inversion(left, right):
-#     result = []
-#     count = 0
-#     i, j = 0, 0
-#     left_len = len(left)
-#     while i < left_len and j < len(right):
-#         if left[i] <= right[j]:
-#             result.append(left[i])
-#             i += 1
-#         else:
-#             result.append(right[j])
-#             count += left_len - i
-#             j += 1
-#     result += left[i:]
-#     result += right[j:]
-#     return result, count
-
 
 exec(input().strip())

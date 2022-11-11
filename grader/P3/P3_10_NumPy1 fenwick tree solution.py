@@ -6,8 +6,8 @@ def eq(A, B, p):
 
 
 def closest_point_indexes(points, p):
-    dis = (points[:][0] - p[0])**2 + (points[:][1]-p[1])**2
-    return np.arange(dis.shape[0])[dis == np.max(dis)]
+    dis = (points[:, 0] - p[0])**2 + (points[:, 1]-p[1])**2
+    return np.arange(dis.shape[0])[dis == np.min(dis)]
 
 
 def number_of_inversions(A):

@@ -40,23 +40,7 @@ def merge_count_split_inversion(left, right):
 
 
 def number_of_inversions(A):
-    lst, count = merge_count_inversion(A)
-    return count
-# FENWICK TREE SOLUTION
-# def count_inversions(a):
-#   res = 0
-#   counts = [0]*(len(a)+1)
-#   rank = { v : i+1 for i, v in enumerate(sorted(a)) }
-#   for x in reversed(a):
-# i = rank[x] - 1
-# while i:
-#   res += counts[i]
-#   i -= i & -i
-# i = rank[x]
-# while i <= len(a):
-#   counts[i] += 1
-#   i += i & -i
-#   return res
+    return merge_count_inversion(A)[1]
 
 
 exec(input().strip())

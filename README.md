@@ -1,6 +1,6 @@
 # 2110101 Com Prog
 
-A repository for storing codes and learning materials from 2110101 Computer Programming Class of 2026, Bachelor of Engineering, Chulalongkorn University
+A personal repository for storing codes and learning materials from 2110101 Computer Programming Class of 2026, Bachelor of Engineering, Chulalongkorn University
 
 <h2 align="center" style="font-weight:bold">
 ***IMPORTANT***

@@ -34,7 +34,7 @@ You are an <strong>Adult</strong> now, okay?
 
  - Note:
     - My section (คอมตรง) is not required to do every homework. So, you probably will not find any useful homework here.
-    - Please be awared that file locations might be different from yours.
+    - Please be awared that the file locations might be different from yours.
 
 ### Author(s)
 

@@ -44,7 +44,7 @@ You are an <strong>Adult</strong> now, okay?
 
 ## Good luck in your engineering career with a bright future
 
-### Other codes
+### Other Comp Prog repositories
 - [Leomotors/2110101-com-prog](https://github.com/Leomotors/2110101-com-prog)
 - [khajornritdacha/com-prog](https://github.com/khajornritdacha/com-prog)
 - [mark48853/2110101-com-prog](https://github.com/mark48853/2110101-com-prog)
